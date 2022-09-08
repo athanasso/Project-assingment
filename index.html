@@ -28,25 +28,23 @@
                         <h1>ΠΡΟΪΟΝΤΑ</h1>
                     </div>
                 </div>
-                <div class="col">
-                    <button type = "button" class="navbar-btn" onclick="showPopup()">Menu<i class="bi bi-list"></i></button>
-                </div>
-                <div class="full-screen hidden flex-container-center">
-                    <div class = "nav-overlay">
-                        <div class = "nav-overlay-container">
-                            <button type = "button" class="navbar-btn sec" onclick="closePopup()">Menu<i class="bi bi-x"></i></button>
-                            <ul class="ul-overlay">
-                                <li><a href = "#" class="text-body">ΑΡΧΙΚΗ</a></li>
-                                <li><a href = "#" class="text-body">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
-                                <li><a href = "#" class="text-body">ΠΡΟΪΟΝΤΑ</a></li>
-                                <li><a href = "#" class="text-body">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
-                                <li><a href = "#" class="text-body">Β2Β</a></li>
-                                <li><a href = "#" class="text-body">ΠΙΣΤΟΠΟΙΗΣΕΙΣ</a></li>
-                                <li><a href = "#" class="text-body">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <header class="col">
+                    <input type='checkbox' id='toggle' style='display:none;'/>
+                    <label class='toggle-btn toggle-btn__cross' for='toggle' onclick="togglenavIcon()">
+                    <Span style="font-size: 1.8rem;">Menu</Span> <i class="bi bi-list" style="font-size: 2rem;"></i>
+                    </label>
+                    <nav>
+                      <ul>
+                        <li><a href = "#">ΑΡΧΙΚΗ</a></li>
+                        <li><a href = "#">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+                        <li><a href = "#">ΠΡΟΪΟΝΤΑ</a></li>
+                        <li><a href = "#">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
+                        <li><a href = "#">Β2Β</a></li>
+                        <li><a href = "#">ΠΙΣΤΟΠΟΙΗΣΕΙΣ</a></li>
+                        <li><a href = "#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                      </ul>
+                    </nav>
+                  </header>
             </div>
         </div>
     </div>  
