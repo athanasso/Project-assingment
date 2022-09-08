@@ -70,8 +70,8 @@
     right: 0;
     top: 0;
     bottom: 0;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);    
+    /*-webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);    */
 }
   
 .flex-container-center {
@@ -93,7 +93,13 @@
     bottom: 1;
 }
 
+/* mobile menu */
+
 /* Second div */
+.second-div .row .col {
+    list-style: none;
+}
+
 .second-div .row .col a{
     text-decoration: none !important;
     font-size: x-large;
