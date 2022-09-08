@@ -1,0 +1,183 @@
+.btn-primary, .btn-primary:visited {
+    background-color: brown !important;
+    box-shadow: none !important;
+    border:1px solid grey !important;
+    color: black !important;
+}
+
+.btn-primary:hover {
+    background-color: white !important;
+    color: brown !important;
+}
+
+/* header section*/
+
+.header-element {
+    width: auto;
+    height: 10rem;
+    margin-top: 2rem;
+}
+
+.header-div {
+    background: url("/assets/header-bg.jpg");
+}
+
+.el-btn {
+    background: url("/assets/red-dot.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin-right: 100%;
+    color: white !important;
+}
+
+.navbar-btn {
+    border: none;
+    background: none;
+    margin-left: 80%;
+    margin-top: 10%;
+    width: auto;
+    font-size: x-large;
+    display: flex;
+}
+
+.current-nav a{
+    color: brown !important;
+    text-decoration: none;
+}
+
+.ul-overlay li a {
+    text-decoration: none !important;
+}
+
+.ul-overlay li {
+    list-style: none;
+    font-size: x-large;
+}
+
+.ul-overlay li a:hover {
+    text-decoration: none !important;
+    color: brown !important;
+}
+
+.ul-overlay li a:active {
+    text-decoration: underline !important;
+}
+
+/* hidden */
+.full-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);    
+}
+  
+.flex-container-center {
+    displaY: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.hidden {
+    display: none;
+}  
+
+.sec {
+    position: absolute;
+    left: 1;
+    right: 0;
+    top: 0;
+    bottom: 1;
+}
+
+/* Second div */
+.second-div .row .col a{
+    text-decoration: none !important;
+    font-size: x-large;
+}
+
+.second-div .row .col a:hover{
+    color: brown !important;
+}
+
+
+/*.second-div .row .col a:active{
+    background: url("/assets/red-dot.png");
+    background-repeat: no-repeat;
+}*/
+
+.second-div {
+    border:1px solid brown;
+    padding: 0.5cm;
+}
+
+/* Products div */
+.products-div {
+    width: 100%;
+    height: 400px;
+    background: url("/assets/koulourakia-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Footer div */
+
+.footer-div {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.footer-div .input-group input {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.footer-div .input-group input:focus {
+    border:1px solid black !important;
+}
+
+.fb-btn {
+    background-image : url("/assets/facebook-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid black !important;
+}
+
+.inst-btn {
+    background-image : url("/assets/instagram-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid black !important;
+}
+
+.input-group span {
+    text-align: end;
+}
+
+.footer-span {
+    color: brown;
+}
+
+/*lower screen */
+@media screen and (max-width: 1200px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products-div {
+        position: static !important;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        height:60%;
+    }
+
+    .footer-div { 
+        position: relative !important;
+        bottom: 0px;
+    }
+}
