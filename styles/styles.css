@@ -64,6 +64,12 @@
 }
 
 /* hidden */
+
+.blur{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
 .full-screen {
     position: absolute;
     left: 0;
@@ -71,7 +77,7 @@
     top: 0;
     bottom: 0;
     /*-webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);    */
+    backdrop-filter: blur(8px);*/
 }
   
 .flex-container-center {
@@ -212,15 +218,91 @@
         flex-direction: column;
     }
 
+    .navbar-btn {
+        margin-left: 20%;
+        margin-top: 60%;
+    }
+
+    .second-div {
+        padding: 0%;
+    }
+
+    .second-div .row .col {
+        display: flex;
+        flex-direction: column;
+    }
+
     .products-div {
         position: static !important;
-        overflow-y: scroll;
-        overflow-x:hidden;
+        overflow-x: hidden;
         height:60%;
+        background-size: contain;
+    }
+
+    .products-div .row .col{
+        padding-left: 20% !important;
     }
 
     .footer-div { 
         position: relative !important;
         bottom: 0px;
+        margin-left: 0;
+    }
+
+    .footer-div .input-group .form-control {
+        width: fit-content;
+    }
+
+    .footer-div .input-group .form-control {
+        padding: 0rem 0rem !important;
+    }
+
+    .footer-div .input-group span {
+        text-align: start !important;
+    }
+}
+
+@media screen and (max-width: 745px) { 
+    .footer-div .input-group span , .footer-div .input-group .form-control{
+        width: auto;
+        min-width: auto;
+        display:auto;
+        text-align: top;
+    }
+
+    .footer-div .input-group .form-control {
+        padding: 0.2rem 0.2rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-div .row {
+        display: flex;
+    }
+
+    .navbar-btn {
+        margin-left: 2%;
+        margin-top: 100%;
+    }
+    
+    .footer-div .input-group .form-control {
+        padding: 0rem 0rem !important;
+    }
+
+    .footer-div .input-group span {
+        font-size: small;
+    }
+
+    .footer-div .input-group .inst-btn , .footer-div .input-group .fb-btn {
+        width: 10%;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-btn {
+        margin-left: 0%;
+        margin-top: 100%;
+        display: block;
     }
 }
